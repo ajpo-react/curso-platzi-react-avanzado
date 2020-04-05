@@ -4,8 +4,9 @@
   "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
   "main": "index.js",
   "scripts": {
+    "now-build": "npm run build",
     "build": "webpack",
-    "lint": "standard",
+    "lint": "standard --fix",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +15,7 @@
     "url": "git+https://github.com/ajpo-react/curso-platzi-react-avanzado.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alvaro Jose Peralta Ocampo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ajpo-react/curso-platzi-react-avanzado/issues"
@@ -33,6 +34,17 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
